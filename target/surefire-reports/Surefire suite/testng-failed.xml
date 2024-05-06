@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="com.automation.APITests">
+        <methods>
+          <include name="createBoard"/>
+          <include name="createLists"/>
+          <include name="moveCardToLists"/>
+          <include name="setup"/>
+          <include name="createCard"/>
+        </methods>
+      </class> <!-- com.automation.APITests -->
+      <class name="com.automation.UITests">
+        <methods>
+          <include name="testAddMultipleProductsToCart"/>
+          <include name="testAddToCartFromListingScreen"/>
+          <include name="teardown"/>
+          <include name="testContinueShoppingRedirection"/>
+          <include name="setup"/>
+          <include name="testCartDetails"/>
+          <include name="testCheckoutInvalidFirstName"/>
+          <include name="testAddToCartFromDetailsScreen"/>
+          <include name="testInvalidLogin"/>
+          <include name="testCheckoutSuccess"/>
+          <include name="testPriceFilter"/>
+          <include name="testUserLogin"/>
+        </methods>
+      </class> <!-- com.automation.UITests -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
